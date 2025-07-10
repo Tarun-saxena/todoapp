@@ -1,7 +1,6 @@
 
 
-const API_URL = 'http://localhost:3001/todos';
-
+const API_URL = 'https://todoapp-0in7.onrender.com/todos';
 // Add a new todo to the DOM
 function addTodoToDOM(todo) {
     const todoList=document.getElementById("todo-list");
