@@ -4,7 +4,13 @@ import { getAllTodo, createTodo, deleteTodoById } from './routes/todo.js';
 const app = express();
 const PORT = 3001;
 
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://todoapp-delta-hazel-60.vercel.app',
+  methods: ['GET', 'POST', 'DELETE'],
+}));
+
+
 app.use(express.json());
 
 
