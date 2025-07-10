@@ -5,10 +5,15 @@ const app = express();
 const PORT = 3001;
 
 
+const app = express();
+
 app.use(cors({
-  origin: 'https://todoapp-delta-hazel-60.vercel.app',
+  origin: 'https://todoapp-delta-hazel-60.vercel.app', 
   methods: ['GET', 'POST', 'DELETE'],
 }));
+
+
+
 
 
 app.use(express.json());
